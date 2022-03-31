@@ -1,0 +1,11 @@
+name: Module CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  ci:
+    uses: emteknetnz/github-actions-ci-cd/.github/workflows/ci.yml@dynamic2
+    with:
+      composer_require_extra: silverstripe/frameworktest:^0.4.3
