@@ -1,0 +1,7 @@
+---
+Name: asset-admin-json-endpoint
+After: '*'
+---
+SilverStripe\Control\Director:
+  rules:
+    'asset-admin-json-endpoint//$Action/$ID/$OtherID': 'SilverStripe\AssetAdmin\Controller\AssetAdminJsonEndpoint'
