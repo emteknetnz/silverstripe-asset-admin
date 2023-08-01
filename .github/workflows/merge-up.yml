@@ -1,0 +1,12 @@
+name: Merge-up
+
+on:
+  workflow_dispatch:
+
+jobs:
+  merge-up:
+    name: Merge-up
+    runs-on: ubuntu-latest
+    steps:
+      - name: Merge-up
+        uses: emteknetnz/gha-merge-up@test-js
